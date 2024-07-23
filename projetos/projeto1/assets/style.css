@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:  smooth ;
 }
 html::-webkit-scrollbar{
     width:0;
@@ -24,7 +24,7 @@ header{
 #conteiner{
     width: 80%;
     margin: 0 auto;
-
+    
 }
 
 .conteiner{
@@ -54,6 +54,12 @@ header a {
     text-decoration:none ;
     font-size: 1.3em;
     font-weight: bold;
+    transition: 0.3s ;
+}
+header a:hover{
+    border-bottom:3px solid rgb(18, 23, 54) ;
+   
+    
 }
 h2{
     font-size: 1.5;
@@ -85,7 +91,7 @@ grid-template-columns:2fr 2fr ;
     border-radius: 2em;
     padding: 2%;
    margin:10% 10% ;
-    
+    box-shadow: -1px 1px 20px -5px;
 }
 
 .col-float-4 p {
@@ -96,11 +102,19 @@ grid-template-columns:2fr 2fr ;
     clear: both;
 }
 
+.col-flex{
+   display: flex;
+justify-content: center;
+   overflow-x: hidden;
+   width: 100%;
 
+ 
+
+}
 .flex-item{
-   
-    flex: 1 1 25%;
-    border: 1px solid #000;
+  flex: 1 1 25%;
+  
+    /* border: 1px solid #000; */
 }
 #aviso{
     background-color:rgb(220, 235, 15) ;
@@ -270,6 +284,12 @@ nav{
     right: -7em;
    
 }
+.nav-bar:hover{
+    .barra{
+        background-color: rgb(18, 23, 54);
+    }
+}
+
     .nav-bar{
       margin-top: 1em;
         display: flex;
@@ -277,21 +297,22 @@ nav{
         justify-content: right;
         height: 2em;
       transition: all 1s;
-    
+ 
     }
     .barra{
-background-color: #000;
+background-color: #000000b2;
 width: 2em;
 height: 1em;
-margin:7% ;
+margin:5% ;
 
-
+border-radius: 5em;
+margin-left: 2em;
     }
     .meio{
-width: 2.5em;
+width: 2.2em;
     }
     .fim{
-        width: 1.7em;
+        width: 1.6em;
     }
     #conteiner  a  h2{
       
@@ -309,8 +330,9 @@ width: 2.5em;
         flex-direction: column;    
         padding: 0.5em;
           padding-left: 2em;
-        
+     
         }
+     
     #Sobre, #galeria,#contato{
         margin: 3% 0;
         text-align: center;
